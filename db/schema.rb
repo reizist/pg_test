@@ -21,10 +21,6 @@ ActiveRecord::Schema.define(version: 2019_06_01_122417) do
 
   create_table "users", force: :cascade do |t|
     t.string "uuid"
-    t.string "name"
-    t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["uuid"], name: "index_users_on_uuid"
   end
 
